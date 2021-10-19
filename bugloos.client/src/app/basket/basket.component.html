@@ -1,0 +1,23 @@
+<div class="container">
+  <div *ngIf="(basket$ | async) === null">
+    <p>There are no Items in your basket</p>
+  </div>
+
+  <ng-container *ngIf="(basket$ | async) as basket">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 ">
+          <app-basket-summary [items]="basket.items"></app-basket-summary>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 offset-0 p-5">
+
+          <a routerLink="/checkout" class="btn btn-success btn-light p-3 font-weight-bold ">
+            CheckOut
+          </a>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

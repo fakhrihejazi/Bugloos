@@ -1,0 +1,30 @@
+
+<!-- show obsolut imgage login in header -->
+<div class="img-navbar">
+</div>
+
+<div class="container">
+  <div class="card  shadow-sm">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 p-3  d-flex justify-content-center">
+        <img src="../../../assets/images/register.png" alt="Image with rounded corners" class="rounded">
+      </div>
+      <div class="col-lg-6 p-3 ">
+        <div class="register-text-box">
+          <form [formGroup]="$any(loginForm)" (ngSubmit)="onSubmit()">
+            <div class="text-center mb-4">
+              <h1 class="h3 mb-3 font-weight-normal  ">login <span class="txt-underline">Now</span></h1>
+            </div>
+            <app-text-input formControlName="email" [label]="'Email Address'"></app-text-input>
+            <app-text-input formControlName="password" [label]="'Password'" [type]="'password'"></app-text-input>
+
+            <button [disabled]="loginForm?.invalid" class="btn btn-lg btn-success btn-block" type="submit">Sign
+              in</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

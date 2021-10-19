@@ -1,0 +1,42 @@
+<section class="section-navbar">
+  <div class="container">
+    <div class="row p-3">
+      <div class="col ">
+        <nav class="navbar card navbar-green ">
+          <div class="container">
+            <a class="navbar-brand">
+              <img src="../../../assets/images/logo.png" alt="">
+            </a>
+            <a class="nav-link" routerLink=""> Home</a>
+            <a class="nav-link" routerLink="">All Course</a>
+            <a class="nav-link" routerLink="">Pages</a>
+            <a class="nav-link" routerLink="">Blog</a>
+
+            <ng-container *ngIf="(currentUser$ | async) !== null">
+              <a class="nav-link" routerLink="/orders">Profile</a>
+            </ng-container>
+
+            <ng-container *ngIf="(currentUser$ | async) === null">
+
+              <div class="col-auto">
+                <button class="btn btn-outline-success me-2 signUp " type="button" routerLink="/account/register">
+                  <p class="signUp-text">Sign Up</p>
+                </button>
+
+                <button class="btn btn-outline-success me-2 signUp" type="button" routerLink="/account/login">
+                  <p class="signUp-text">Sign In</p>
+                </button>
+              </div>
+
+            </ng-container>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <app-breadcrumb></app-breadcrumb>
+      </div>
+    </div>
+  </div>
+</section>

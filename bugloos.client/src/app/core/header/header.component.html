@@ -1,0 +1,56 @@
+<section class="p-1 ">
+  <div class="row justify-content-center align-items-center">
+    <ng-container *ngIf="(currentUser$ | async)">
+      <div class="col-auto">
+        <a (click)="logout();" class="d-flex align-items-center">
+          <i class="fas fa-sign-out-alt mr-1"></i>
+          Logout
+        </a>
+      </div>
+    </ng-container>
+    <div class="col-auto">
+      <a routerLink="/basket" class="position-relative">
+        <i class="fa fa-shopping-cart mr-1"></i>
+        <div *ngIf="(basket$ | async) as basket" class="cart-no">{{basket.items.length}}</div>
+      </a>
+    </div>
+    <div class="col-auto">
+      <p>All course 28% off for <span>Liberian people's.</span></p>
+    </div>
+    <div class="col-auto">
+      <svg xmlns="http://www.w3.org/2000/svg" width="95" height="20">
+        <g fill="none" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10">
+          <path
+            d="M3.471 11.53c1.522 1.408 3.577 1.145 5.935 1.174 9.331.121 18.768-.963 28.067-1.583 15.529-1.034 32.082-3.414 47.576-.777" />
+          <path stroke-linejoin="round"
+            d="M81.662 16.798c2.522-3.59 6.828-3.986 9.867-6.88-2.967-1.208-8.871-3.928-10.767-6.716" />
+        </g>
+      </svg>
+    </div>
+    <div class="col-auto ">
+      <i class="fas fa-phone-volume  px-2"></i>
+      <p>(970)262-1413</p>
+    </div>
+    <div class="col-auto">
+      <i class="far fa-envelope  px-2"></i>
+      <a href="#">address@gmail.com</a>
+    </div>
+    <div class="col-auto">
+      <svg xmlns="http://www.w3.org/2000/svg" width="95" height="20">
+        <g fill="none" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10">
+          <path
+            d="M3.471 11.53c1.522 1.408 3.577 1.145 5.935 1.174 9.331.121 18.768-.963 28.067-1.583 15.529-1.034 32.082-3.414 47.576-.777" />
+          <path stroke-linejoin="round"
+            d="M81.662 16.798c2.522-3.59 6.828-3.986 9.867-6.88-2.967-1.208-8.871-3.928-10.767-6.716" />
+        </g>
+      </svg>
+    </div>
+    <div class=" d-flex  col-auto justify-content-between">
+      <i class="fab fa-facebook-f  px-2"></i>
+      <i class="fab fa-twitter  px-2"></i>
+      <i class="fab fa-skype  px-2 "></i>
+      <i class="fab fa-instagram px-2"></i>
+    </div>
+  </div>
+
+</section>

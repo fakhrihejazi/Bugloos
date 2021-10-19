@@ -1,0 +1,45 @@
+section {
+  background-color: #212831;
+}
+
+.fab {
+  color: #fff;
+}
+
+svg g {
+  stroke: #fff;
+}
+
+span {
+  color: #54925a;
+}
+
+a,
+a:link,
+p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  display: contents;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fa-sign-out-alt,
+.fa-phone-volume,
+.fa-envelope {
+  color: #54925a;
+}
+
+.cart-no {
+  position: absolute;
+  min-height: 15px;
+  min-width: 15px;
+  border-radius: 50%;
+  font-size: 1em;
+  background: #54925a;
+  color: white;
+  text-align: center;
+  top: 3px;
+  right: 3px;
+}

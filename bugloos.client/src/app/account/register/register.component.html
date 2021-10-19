@@ -1,0 +1,110 @@
+<!-- show obsolut imgage login in header -->
+<div class="img-navbar">
+</div>
+
+<div class="container">
+  <div class="card  shadow-sm">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-auto  d-flex p-sm-0 col-sm-12  p-md-5 justify-content-center ">
+        <img src="../../../assets/images/register.png" alt="Image with rounded corners" class="rounded">
+      </div>
+      <div class="col">
+        <div class="register-text-box">
+          <form [formGroup]="$any(registerForm)" (ngSubmit)="onSubmit()">
+            <div class="text-center mb-4">
+              <h1 class="h3 mb-3 font-weight-normal ">Registration <strong class="txt-underline">Now</strong></h1>
+            </div>
+            <div class="row">
+              <div class="col">
+                <app-text-input formControlName="displayName" [label]="'Display Name'"></app-text-input>
+              </div>
+              <div class="col">
+                <app-text-input formControlName="email" [label]="'Email Address'"></app-text-input>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <app-text-input formControlName="password" [label]="'Password'" [type]="'password'"></app-text-input>
+              </div>
+              <div class="col">
+                <div class="form-group">
+
+                  <div class="row ">
+                    <div class="col  ">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="male">
+                        <label class="form-check-label" for="male">
+                          Male
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="femail" checked>
+                        <label class="form-check-label" for="femail">
+                          Female
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="row  mx-1 ">
+              <div class="form-group ">
+                <label class="text-muted ">Hobbies :</label>
+                <div class="row border p-1 mx-1 rounded">
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="cricket">
+                      <label class="form-check-label" for="cricket">Cricket</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="football">
+                      <label class="form-check-label" for="football">Football</label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="chess">
+                      <label class="form-check-label" for="chess">Chess</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row mx-1 ">
+              <div class="form-group  mb-0">
+                <label class="my-auto text-muted">Upload Your File :</label>
+                <input id="file" type="file" class="form-control rounded" />
+              </div>
+            </div>
+            <ul class="text-danger list-unstyled" *ngIf="errors">
+              <li *ngFor="let error of errors">
+                {{error}}
+              </li>
+            </ul>
+
+
+
+            <button [disabled]="registerForm?.invalid" class="btn btn-lg btn-block btn-success" type="submit">create
+              an account</button>
+            <button class="btn btn-lg btn-block btn-google">sign up whth Google</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<ng-container *ngIf="categories && categories.length>0">
+  <div class="container">
+    <div class=" category card">
+      <div class="col-auto p-3 category-box">
+        <div class="row">
+          <div class="col-auto align-self-center"><i class="fas fa-arrow-alt-circle-left"></i></div>
+          <div class="col-auto" *ngFor="let category of categories">
+            <button class="btn-category" (click)="categoryClick(category)">{{category.name}}</button>
+          </div>
+          <div class="col-auto  align-self-center"><i class="fas fa-arrow-alt-circle-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

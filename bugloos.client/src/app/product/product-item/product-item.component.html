@@ -1,0 +1,42 @@
+<ng-container *ngIf="product">
+  <div class="card  px-2 product">
+    <div class=" card-body  d-flex flex-column ">
+      <div class="row pb-2">
+        <div class="col p-0">
+          <img src="{{product.pictureUrl}}" alt="{{product.name}}"
+            class="img-fluid bg-light border rounded img-product">
+        </div>
+      </div>
+      <div class="row pb-2 ">
+        <div class="col pl-0 ">
+          <img src="{{product.teacherPictureUrl}}" alt="{{product.teacherName}}" class=" img-teacher rounded-circle">
+          <p class="d-inline p-sm-1  text-secondary text-center">
+            <small>{{product.teacherName}}</small>
+          </p>
+        </div>
+        <div class="col-auto  align-self-center text-right pr-0">
+          <button (click)="addItemBasket()" class="btn btn-success  border fa fa-shopping-cart"></button>
+        </div>
+      </div>
+      <div class="row pb-2">
+        <div class="col pl-0">
+          <p class="h6 font-weight-bold d-inline-block">{{product.name}}</p>
+        </div>
+      </div>
+      <div class="row card bg-light d-flex flex-row p-2 ">
+        <div class="col  ">
+          <span class="text-success font-weight-bold text-right">{{product.price | currency}}</span>
+        </div>
+        <div class="col-auto">
+          <span class="font-weight-bold">4.8</span>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star "></i>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

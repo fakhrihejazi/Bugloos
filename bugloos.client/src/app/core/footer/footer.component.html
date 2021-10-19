@@ -1,0 +1,115 @@
+<footer>
+  <section class="section-footer-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col justify-content-center">
+          <p>Ready to start?</p>
+          <h3>Download out mobile app.</h3>
+          <h3>for easy to start your course</h3>
+        </div>
+
+        <div class="col text-center  align-self-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="125" height="30">
+            <g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              stroke-miterlimit="10">
+              <path
+                d="M3.184 13.042c1.211.685 10.033-1.267 13.024-1.771 5.31-.896 10.379-2.838 15.618-4.043 3.092-.711 8.959-3.061 11.726-.731 1.611 1.357.979 3.487-.249 4.882-1.803 2.049-4.153 1.902-6.454 2.839-1.626.662-5.729 3.326-2.654 4.979 2.053 1.104 4.831-.098 6.838-.708 4.344-1.321 20.249-8.552 21.157.666.259 2.633-4.513 6.124-1.627 8.446 2.927 2.354 9.086-3.066 11.505-4.466 4.082-2.363 7.929-5.205 12.248-7.14 10.401-4.658 21.498-8.162 32.867-8.952" />
+              <path d="M114.176 14.663c1.459-4.138 5.496-5.683 7.641-9.291-3.183-.361-9.603-1.383-12.182-3.556" />
+            </g>
+          </svg>
+        </div>
+        <div class="col ">
+          <div class="row">
+            <div class="col-auto"> <a href="#" class="img img-googleplay"></a></div>
+            <div class="col-auto"><a href="#" class="img img-applestore"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-footer-middel">
+    <div class="container">
+      <div class="row">
+        <div class="col logo">
+          <a href="#" class="footer-logo">
+            <img src="../../../assets/images/logo.png" alt="">
+          </a>
+          <p class="logo_text">Caribbean Ct</p>
+          <a href="#" class="logo_link">Haymarket, Virginia (VA).</a>
+          <ul class="logo_ul mb-1">
+            <li> <i class="far fa-envelope  px-2"></i></li>
+            <li><a href="#" class="footer-link">address@gmail.com</a></li>
+          </ul>
+
+          <ul class="logo_ul mb-4">
+            <li> <i class="fas fa-phone-volume  px-2"></i></li>
+            <li>
+              <a href="#" class="footer-link">(970)262-1413</a>
+            </li>
+
+          </ul>
+
+          <ul class="logo_ul ">
+            <li><i class="fab fa-facebook-f px-2 "></i></li>
+            <li><i class="fab fa-twitter  px-2"></i></li>
+            <li><i class="fab fa-skype  px-2 "></i></li>
+            <li><i class="fab fa-instagram px-2"></i></li>
+          </ul>
+        </div>
+        <div class="col ">
+          <p class="footer-heading">Category</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Creative Writing</a></li>
+            <li><a href="#" class="footer-link">Film & Video</a></li>
+            <li><a href="#" class="footer-link">Graphic Design</a></li>
+            <li><a href="#" class="footer-link">UI/UX Design</a></li>
+            <li><a href="#" class="footer-link">Business Analytics</a></li>
+            <li><a href="#" class="footer-link">Marketing</a></li>
+          </ul>
+        </div>
+        <div class="col ">
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Discussion</a></li>
+            <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="#" class="footer-link">Custormer Support</a></li>
+            <li><a href="#" class="footer-link">Course FAQ's</a></li>
+          </ul>
+        </div>
+        <div class="col ">
+          <p class="footer-heading">Subscribe</p>
+          <p class="footer-link">Lorem Ipsum has been them an indestry Printer took a galley make book.</p>
+          <form class="form-floating" [formGroup]="$any(subscribForm)" (ngSubmit)="onSubmit()">
+
+            <app-text-input formControlName="email" [label]="'Email Here'"></app-text-input>
+            <button [disabled]="subscribForm?.invalid" class="btn btn-lg btn-success btn-light " type="submit">Subscribe
+              Now</button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <section class="p-1 section-footer-bottom ">
+    <div class="container">
+      <div class="row mt-2 ">
+        <div class="col ">
+          <ul class="d-flex gx-2 ">
+            <li><span>Terms of Service</span></li>
+            <li><span>Privacy Policy</span></li>
+            <li><span>Sitemap</span></li>
+            <li><span>Security</span></li>
+          </ul>
+        </div>
+        <div class="col">
+          <p class="text-right">&copy;<span>2021</span> <span class="text-green">EDULE</span> Made with<span
+              class="symbol"> ♥ </span>by <span class="text-green">Codecarnival</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>

@@ -1,0 +1,139 @@
+footer {
+}
+
+.section-footer-top {
+  background-color: #54925a;
+  color: #fff;
+  line-height: 1.05rem;
+  padding: 3rem;
+}
+
+.section-footer-middel {
+  background-color: #e7f8ee;
+}
+
+.section-footer-bottom {
+  background-color: #212831;
+  color: #fff;
+  font-size: 14px;
+}
+
+.gx-2 {
+  gap: 2rem;
+}
+
+.symbol {
+  color: red;
+}
+.text-green {
+  color: #54925a;
+}
+
+li:first-child {
+  list-style: none;
+}
+
+.img,
+.img:link,
+.img:visited {
+  display: inline-block;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  width: 148px;
+  height: 48px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.img:hover,
+.img:active {
+  box-shadow: inset 0 0 0 3px #49824e;
+}
+.img:hover,
+.img:active {
+  box-shadow: inset 0 0 0 3px #49824e;
+}
+
+.img-googleplay {
+  background-image: url("../../../assets/images/googleplay.png");
+}
+.img-applestore {
+  background-image: url("../../../assets/images/apple_store.png");
+}
+
+.section-footer-middel {
+  padding: 3rem 0;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+.logo_text {
+  font-weight: 700;
+  margin-bottom: 0px;
+  line-height: 1.6;
+}
+.logo_link,
+.logo_link:link {
+  color: #54925a;
+  text-decoration: none;
+  margin-bottom: 1.6rem;
+  display: block;
+}
+
+.fa-phone-volume,
+.fa-envelope {
+  color: #54925a;
+}
+
+.logo_ul {
+  display: flex;
+  gap: 0.25rem;
+  list-style: none;
+  align-items: center;
+  margin-bottom: 0rem;
+}
+
+.logo_ul p {
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: block;
+  text-decoration: none;
+}
+
+.social_link {
+  list-style: none;
+}
+
+.footer-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-link,
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}

@@ -1,0 +1,28 @@
+section {
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: 12rem;
+  margin-bottom: 2rem;
+}
+
+.register-text-box {
+  padding: 3rem 4rem 4rem 4rem;
+}
+.btn-google {
+  background-color: #e7f8ee;
+  color: #54925a;
+  font-size: 16px;
+}
+/*setting image header */
+.img-navbar {
+  background-image: url("../../../assets/images/register-header.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: absolute;
+  top: 1px;
+  z-index: -1;
+  padding: 12rem 0;
+}

@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+/********/
+/*change btn-success bootstrapt*/
+.btn-success {
+  background-color: #54925a;
+  color: #fff;
+  border: none;
+  transition: all 0.3s;
+}
+
+.btn-light:hover {
+  background-color: #e7f8ee;
+  color: #54925a;
+  box-shadow: inset 0 0 0 3px #49824e;
+}
+
+.btn-light:disabled {
+  background-color: #54925a;
+  color: #fff;
+}
+/*for underline text */
+.txt-underline {
+  position: relative;
+  z-index: 0;
+  color: #49824e;
+}
+
+.txt-underline::before {
+  content: "";
+  position: absolute;
+  width: 130%;
+  height: 30%;
+  border: solid 3px #54925a;
+  right: 5%;
+  top: 89%;
+  border-radius: 100%;
+  border-color: #54925a transparent transparent transparent;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+.txt-underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  border: solid 3px #54925a;
+  right: 0%;
+  top: 95%;
+  border-radius: 100%;
+  border-color: #54925a transparent transparent transparent;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+/********/

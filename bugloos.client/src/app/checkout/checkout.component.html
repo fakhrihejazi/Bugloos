@@ -1,0 +1,16 @@
+<div class=container>
+  <ng-container *ngIf="showError">
+  <div class="alert alert-danger">
+    <strong>Error!</strong>
+    <ul *ngFor="let error of errors">
+      <Li><span>{{error}}</span></Li>
+    </ul>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="showSuccess">
+  <div class="alert alert-success">
+    <strong>Success</strong>
+  </div>
+</ng-container>
+</div>

@@ -1,0 +1,54 @@
+.section-navbar {
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.img-navbar {
+  background-size: cover;
+  background-position: center;
+  height: 24rem;
+  width: 100%;
+}
+
+span {
+  color: #000;
+}
+a:link,
+.nav-link {
+  color: #000;
+}
+
+.navbar-green {
+  background-color: #e7f8ee;
+}
+
+.signUp {
+  color: #000;
+  font-weight: 500;
+  border-color: transparent;
+}
+
+.signUp:hover,
+.signUp:active,
+.signUp:focus {
+  background-color: #fff !important;
+  border-color: #28a745 !important;
+  color: #000 !important;
+}
+.signUp-text {
+  display: contents;
+}
+
+.brand-text {
+  color: #54925a;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.card {
+  border-radius: 1rem;
+}

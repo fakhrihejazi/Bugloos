@@ -1,0 +1,19 @@
+<div class="container">
+  <div *ngIf="orderitems == null || orderitems.length==0">
+    <p>There are no Items in your basket</p>
+  </div>
+
+  <ng-container *ngIf="orderitems && orderitems.length>0">
+    <div *ngIf="orderitems">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 ">
+            <app-basket-summary [items]="orderitems"></app-basket-summary>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </ng-container>
+
+</div>
